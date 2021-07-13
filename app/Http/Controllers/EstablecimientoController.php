@@ -17,6 +17,7 @@ class EstablecimientoController extends Controller
     {
         //cargar categorias
         $categorias = Categoria::all();
+        
         return view('establecimientos.create',compact('categorias'));
     }
 
